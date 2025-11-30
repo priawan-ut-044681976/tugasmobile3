@@ -1,0 +1,29 @@
+{
+  "name": "tugasmobile3",
+  "version": "1.0.0",
+  "description": "Ionic web component demo for Coinlore ticker list",
+  "main": "index.js",
+  "scripts": {
+    "start": "python -m http.server 8100",
+    "build": "rm -rf www && mkdir www && cp index.html styles.css app.js www/",
+    "cap:add-android": "npm run build && npx cap add android",
+    "cap:sync": "npm run build && npx cap sync",
+    "cap:run-android": "npm run build && npx cap run android -l --external",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ionic",
+    "coinlore",
+    "mobile"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2"
+  }
+}

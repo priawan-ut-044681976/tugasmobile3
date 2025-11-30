@@ -1,0 +1,7 @@
+{
+  "name": "tugasmobile3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
