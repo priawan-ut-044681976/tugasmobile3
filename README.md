@@ -3,8 +3,11 @@
 Demo Ionic mobile-style view that loads ticker data from the [Coinlore tickers API](https://api.coinlore.net/api/tickers/) and displays rank, name, symbol, and USD price.
 
 ## Menjalankan (browser)
-1. Pastikan Python tersedia.
-2. Jalankan server lokal:
+1. Instal dependensi (untuk server statis):
+   ```bash
+   npm install
+   ```
+2. Jalankan server lokal (akan membangun ke folder `www/` terlebih dahulu):
    ```bash
    npm start
    ```
