@@ -1,0 +1,58 @@
+:root {
+  --hero-background: linear-gradient(135deg, #1b1f3a, #0e7490);
+}
+
+ion-app,
+body,
+html {
+  background: #f6f7fb;
+}
+
+.hero {
+  background: var(--hero-background);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  margin: 0.25rem 0 0;
+}
+
+.hero .subtitle {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+.hero .eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+ion-card {
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+}
+
+ion-item .price {
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.empty-row {
+  opacity: 0.65;
+}
+
+.status-ok {
+  --color: #0f766e;
+}
+
+.status-error {
+  --color: #b91c1c;
+}

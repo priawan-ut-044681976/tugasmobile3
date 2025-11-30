@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coinlore Crypto List</title>
+    <link rel="stylesheet" href="https://unpkg.com/@ionic/core@7.2.5/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="https://unpkg.com/@ionic/core@7.2.5/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://unpkg.com/@ionic/core@7.2.5/dist/ionic/ionic.js"></script>
+  </head>
+  <body>
+    <ion-app>
+      <ion-header translucent="true">
+        <ion-toolbar>
+          <ion-title>Crypto Prices</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content fullscreen="true" class="ion-padding">
+        <ion-refresher slot="fixed" id="refresher">
+          <ion-refresher-content pulling-text="Pull to refresh"></ion-refresher-content>
+        </ion-refresher>
+
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Coinlore API</p>
+            <h1>Top Crypto Assets</h1>
+            <p class="subtitle">Displays rank, name, symbol, and price in USD.</p>
+          </div>
+          <ion-chip color="primary" outline="true" id="status-chip">
+            <ion-label>Loading...</ion-label>
+          </ion-chip>
+        </section>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Market Overview</ion-card-title>
+            <ion-card-subtitle>Tap an item for quick info</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-list id="ticker-list">
+              <ion-item lines="full" class="empty-row">
+                <ion-label>Waiting for data...</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ion-app>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
